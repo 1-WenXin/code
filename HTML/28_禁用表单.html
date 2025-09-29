@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+<body>
+    <form action="https://search.jd.com/search" target="_blank">
+        <!-- 文本输入框 -->
+         <!-- 禁用表单disabled -->
+        账户:<input disabled type="text" name="account" value="wenxin" maxlength="10"><br>
+        <!-- 密码输入框 -->
+        密码<input type="password" name="secrety" value="112233" maxlength="10"><br>
+        <!-- 单选框和多选框里面value是必须写的，文本和密码框对value没有多大的需求 -->
+        <!-- 在这里面写的name和value最后都会呈现在网站上 -->
+        <!-- 单选框 -->
+        性别：
+        <input disabled type="radio" name="gender" value="male">男
+        <input type="radio" name="gender" value="famale" checked>女<br>
+        <!-- 多选框 -->
+        爱好：
+        <input type="checkbox" name="hobby" value="smoke" checked>抽烟
+        <input type="checkbox" name="hobby" value="drink">喝酒
+        <input type="checkbox" name="hobby" value="perm">染发<br>
+        其他：
+        <textarea name="message" rows="5" cols="10">我是文本域</textarea><br>
+        籍贯：
+        <select name="place">
+            <option value="beijing">江苏</option>
+            <option value="shanghai" selected>上海</option>
+            <option value="suzhou1">北京</option>
+        </select><br>
+        <!-- 隐藏域 -->
+        <input type="hidden" name="abc" value="555">
+        <br>
+        <!-- 确认按键的第一种方式 -->
+        <!-- <button>确认</button> -->
+        <!-- 第二种方式 -->
+        <!-- 按键里面的name可以不用写，她只是一个提交的说明，两种都不需要写 -->
+        <input type="submit" value="确认">
+        <!-- 重置按钮第一种写法 -->
+        <!-- button它的属性如果不修改的话是submit -->
+        <!-- <button type="reset">点我重置</button> -->
+        <!-- 重置按键第二种方式 -->
+        <input type="reset" value="点我重置"><br>
+    </form>
+    <form action="https://www.baidu.com/s">
+        <input type="text" name="wd">
+        <button>百度搜索框</button>
+    </form>
+</body>
+</html>

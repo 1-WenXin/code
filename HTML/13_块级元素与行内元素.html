@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>块级元素与行内元素</title>
+    <style>
+        h1{
+            font-size: 80px;
+            color: greenyellow;
+            background-color: aqua;
+            transform: rotate();
+        }
+    </style>
+</head>
+<body>
+    <!-- 块级元素 特点：独占一行 -->
+    <!-- <h1>把个人信息“安全提”筑牢</h1>
+    <h4>2022-06-21 07:34 . 1347条评论</h4>
+    <div>
+        <p>置身移动互联网，人们面临互联网的同时也在一些场景中面临着网络信息泄露</p>
+        <p>一些APP生成看视频、玩游戏甚至走路都可以赚钱，但用户也面临提现非常困难，含容易泄露个人信息</p>
+        <div>11</div>
+    </div> -->
+    <!-- 行内元素 特点：不独占一行 -->
+    <!-- <input type="text" > -->
+    <!-- 规则1:块级元素中能写：行内元素、块级元素（几乎什么都能写） -->
+    <!-- <div>
+        <span>尚硅谷1</span>
+        <input type="text">
+        <div>尚硅谷2</div>
+    </div> -->
+
+    <!-- 规则2：行内元素中能写：行内元素，但不能写：块级元素 -->
+    <!-- <span>
+        <span>尚硅谷1</span>
+        <input type="text">
+        <div>尚硅谷3</div> -->
+        <!-- <span>尚硅谷2</span>
+        <div>尚硅谷4</div>
+    </span> -->
+    <!-- <span>尚硅谷5</span> -->
+
+    <!-- 特殊规则：h1-h6不能互相嵌套 -->
+    <h1>
+        尚硅谷6
+        <h2>尚硅谷7</h2>
+    </h1>
+</body>
+</html>

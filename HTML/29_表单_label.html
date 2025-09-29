@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+<body>
+    <form action="https://search.jd.com/search" target="_blank">
+        <label for="zhangdan">账户:</label>
+        <input id="zhangdan" name="account" value=""><br>
+        <label>
+            密码:<input type="password" name="secrety"><br>
+        </label>
+        <!-- 单选框里面表单要想实现焦点，必选的是后面的男女，而不是性别 -->
+        性别：
+        
+        <!-- <label for="man">男</label> -->
+        <label><input type="radio" name="gender" value="male">男</label>
+        <label><input type="radio" name="gender" value="famale">女</label>
+        <br>
+        爱好：
+        <input id="yanwu" type="checkbox" name="hobby" value="smoke" checked>
+        <label for="yanwu">抽烟</label>
+        <input id="jiu" type="checkbox" name="hobby" value="drink">
+        <label for="jiu">喝酒</label>
+        <input id="ranfa" type="checkbox" name="hobby" value="perm">
+        <label for="ranfa">染发</label>
+        <br>
+        其他：
+        <textarea name="message" rows="5" cols="10"></textarea><br>
+        籍贯：
+        <select name="place">
+            <option value="beijing">江苏</option>
+            <option value="shanghai">上海</option>
+            <option value="suzhou1">北京</option>
+        </select><br>
+        <input type="hidden" name="abc" value="555">
+        <br>
+        <input type="submit" value="确认">
+        <input type="reset" value="点我重置"><br>
+    </form>
+</body>
+</html>

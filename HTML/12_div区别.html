@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div布局示例</title>
+    <style>
+        /* 清除默认样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* 头部区域 */
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        /* 导航栏区域 */
+        .nav {
+            background-color: #555;
+            padding: 0.5rem;
+        }
+
+        .nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem;
+        }
+
+        .nav a:hover {
+            background-color: #777;
+        }
+
+        /* 主要内容区（包含主体内容和侧边栏） */
+        .main-container {
+            display: flex;
+            margin: 1rem;
+            gap: 1rem;
+        }
+
+        /* 主体内容区域 */
+        .content {
+            flex: 3; /* 占3份宽度 */
+            background-color: #f4f4f4;
+            padding: 1rem;
+        }
+
+        /* 侧边栏区域 */
+        .sidebar {
+            flex: 1; /* 占1份宽度 */
+            background-color: #e0e0e0;
+            padding: 1rem;
+        }
+
+        /* 底部区域 */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- 头部区域 -->
+    <div class="header">
+        <h1>我的网站</h1>
+        <p>这是一个使用div构建的网页布局示例</p>
+    </div>
+
+    <!-- 导航栏区域 -->
+    <div class="nav">
+        <ul>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">文章</a></li>
+            <li><a href="#">关于</a></li>
+            <li><a href="#">联系</a></li>
+        </ul>
+    </div>
+
+    <!-- 主要内容容器（包含主体内容和侧边栏） -->
+    <div class="main-container">
+        <!-- 主体内容区域 -->
+        <div class="content">
+            <h2>主体内容</h2>
+            <p>这里是网页的主要内容部分，可以包含多个段落、图片、视频等。</p>
+            <p>使用div可以将这部分内容与其他区域（如侧边栏）区分开，方便单独设置样式和布局。</p>
+        </div>
+
+        <!-- 侧边栏区域 -->
+        <div class="sidebar">
+            <h3>侧边栏</h3>
+            <p>这里可以放一些辅助信息，比如热门文章、分类导航等。</p>
+        </div>
+    </div>
+
+    <!-- 底部区域 -->
+    <div class="footer">
+        <p>© 2023 我的网站 - 保留所有权利</p>
+    </div>
+</body>
+</html>
