@@ -12,9 +12,28 @@
 # else:
 #     print("输入有误。")
 
-helight=input('请输入你的身高：')
-try:
-    num=float(helight)
-    print("打印数字：",num)
-except:
-    print("输入有误")
+# helight=input('请输入你的身高：')
+# try:
+#     num=float(helight)
+#     print("打印数字：",num)
+# except:
+#     print("输入有误")
+
+# option=input("输入编号")
+# # print("打印你输入的编号：",option)
+# print(f"你选择的编号:{option}")
+
+x=40
+print(x)
+x+=4
+print(x)
+x-=4
+print(x)
+x**=4#
+print(x)
+x//=4
+print(x)
+x/=4
+print(x)
+x%=4
+print(x)
